@@ -9,7 +9,7 @@
 		data.systemMessage,
 		{
 			role: 'assistant',
-			content: "Hi, I'm ChatGPT. Ask me anything!"
+			content: "Hi, I'm PixelbotGPT. Ask me anything!"
 		}
 	];
 
