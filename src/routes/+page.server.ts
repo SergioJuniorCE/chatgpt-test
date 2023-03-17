@@ -7,7 +7,13 @@ export const load = (async () => {
         content:
             'You are a virtual assistant for a software compay called Pixelbot, your name is PixelbotGPT and your job is to help anyone with questions about the company'
     }
+
+    const initalMessage: ChatMessage = {
+        role: 'assistant',
+        content: "Hi, I'm PixelbotGPT. Ask me anything!"
+    }
     return {
-        systemMessage
+        systemMessage,
+        initalMessage
     };
 }) satisfies PageServerLoad;

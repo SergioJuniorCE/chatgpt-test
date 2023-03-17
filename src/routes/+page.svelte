@@ -5,13 +5,9 @@
 
 	export let data: PageData;
 
-	let messages: ChatMessage[] = [
-		data.systemMessage,
-		{
-			role: 'assistant',
-			content: "Hi, I'm PixelbotGPT. Ask me anything!"
-		}
-	];
+	const { systemMessage, initalMessage } = data;
+
+	let messages: ChatMessage[] = [systemMessage, initalMessage];
 
 	let newMessage: string;
 
